@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&display=swap');
+
+
+$colors:(
+    primary:#C6F5FE,
+    primary-dark:darken(#C6F5FE,30%),
+    primary-dark2:darken(#C6F5FE,60%),
+    seconde:#283D73,
+    seconde-light:#28315e,
+    c1:#E5FAFF,
+    c2:#DCF9FD,
+    c3:#E6FDFF,
+
+);
+@mixin circel ($top,$left,$height,$width,$background){
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+    // hadou ytbdlou
+    top: $top;
+    left: $left; 
+    height: $height;
+    width: $width;
+    background: color($background);
+}
+
+@function color ($name) {
+    @return map-get($colors, $name)
+}
+*{font-family:'Roboto Slab', serif;}
+html,body {
+    height: 99%;
+    width: 99%;
+    top: 0;
+    left: 0;
+}
+
+
+
+
+  
+.blue-background{
+    .bg{
+        position: fixed;
+        margin: 0;
+        top: 0;
+        left: -15%;
+        position: absolute;
+        z-index: -1;
+        height: 100vh;
+        width: 99%;
+        background:color(primary);
+        clip-path: ellipse(60% 80% at 0% 50%);
+    }
+    #C1{
+        @include circel(20%,-5%,235px,235px,c1);
+    }
+    #C2{
+        @include circel(10%,15%,100px,100px,c2);
+    }
+    #C3{
+        @include circel(15%,25%,150px,150px,c3);
+    }
+    #C4{
+        @include circel(40%,15%,80px,80px,c2);
+    }
+    #C5{
+        @include circel(50%,25%,70px,70px,c1);
+    }
+      
+}
+
+header{
+
+    padding: 10px;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo h1{
+        font-family: 'Just Another Hand', cursive;
+        color: color(seconde);
+        margin-left: 15%;
+        font-size: 2.5em;
+        letter-spacing: .1em;
+    }
+
+    ul{
+        display: flex;
+        list-style-type: none;
+        margin-right: 5%;
+        li{
+           margin: 0 20px;
+          
+           a{
+            text-decoration: none;
+            padding: 10px;
+            color: color(primary-dark);
+            
+                &:hover{
+                    color: color(primary-dark2);
+                    text-shadow: 0 2px 10px color(primary-dark) ;
+                }
+           }
+           .nav-sign-in{
+               border-radius: 20px;
+               background-color: color(seconde);
+               color: color(primary);
+
+               &:hover{
+                color: white;
+                background:transparent;
+                background-color: color(seconde-light);
+                text-shadow:none;
+                }
+           }
+           
+        }
+    }
+
+}
+
+section{
+    margin: 0 3%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .left{
+        color: color(seconde);
+        .top{
+            font-size: 2.5em;  
+        }
+        .botoom{
+            width: 60%;
+        }
+        .banner-sign-in{
+            text-decoration: none;
+            padding: 10px 30px ;
+            border-radius: 20px;
+            background-color: color(seconde);
+            color: color(primary);
+            position: relative;
+
+            &:hover{
+                color: white;
+                background:transparent;
+                background-color: color(seconde-light);
+                text-shadow:none;
+                }
+        }
+    }
+    .right{
+        img{
+            width: 400px;
+            height: 400px;
+        }
+    }
+   
+}
+
+footer{
+    padding-left: 7%;
+    left: 0;
+    bottom: 0;
+    i{
+        font-size: 30px;
+        margin-right: 10px;
+        color: color(seconde);
+    }
+
+}

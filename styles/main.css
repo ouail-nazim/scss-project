@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&display=swap");
+* {
+  font-family: 'Roboto Slab', serif;
+}
+
+html, body {
+  height: 99%;
+  width: 99%;
+  top: 0;
+  left: 0;
+}
+
+.blue-background .bg {
+  position: fixed;
+  margin: 0;
+  top: 0;
+  left: -15%;
+  position: absolute;
+  z-index: -1;
+  height: 100vh;
+  width: 99%;
+  background: #C6F5FE;
+  -webkit-clip-path: ellipse(60% 80% at 0% 50%);
+          clip-path: ellipse(60% 80% at 0% 50%);
+}
+
+.blue-background #C1 {
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  top: 20%;
+  left: -5%;
+  height: 235px;
+  width: 235px;
+  background: #E5FAFF;
+}
+
+.blue-background #C2 {
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  top: 10%;
+  left: 15%;
+  height: 100px;
+  width: 100px;
+  background: #DCF9FD;
+}
+
+.blue-background #C3 {
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  top: 15%;
+  left: 25%;
+  height: 150px;
+  width: 150px;
+  background: #E6FDFF;
+}
+
+.blue-background #C4 {
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  top: 40%;
+  left: 15%;
+  height: 80px;
+  width: 80px;
+  background: #DCF9FD;
+}
+
+.blue-background #C5 {
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  top: 50%;
+  left: 25%;
+  height: 70px;
+  width: 70px;
+  background: #E5FAFF;
+}
+
+header {
+  padding: 10px;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logo h1 {
+  font-family: 'Just Another Hand', cursive;
+  color: #283D73;
+  margin-left: 15%;
+  font-size: 2.5em;
+  letter-spacing: .1em;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  margin-right: 5%;
+}
+
+header ul li {
+  margin: 0 20px;
+}
+
+header ul li a {
+  text-decoration: none;
+  padding: 10px;
+  color: #30dbfb;
+}
+
+header ul li a:hover {
+  color: #03798f;
+  text-shadow: 0 2px 10px #30dbfb;
+}
+
+header ul li .nav-sign-in {
+  border-radius: 20px;
+  background-color: #283D73;
+  color: #C6F5FE;
+}
+
+header ul li .nav-sign-in:hover {
+  color: white;
+  background: transparent;
+  background-color: #28315e;
+  text-shadow: none;
+}
+
+section {
+  margin: 0 3%;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+section .left {
+  color: #283D73;
+}
+
+section .left .top {
+  font-size: 2.5em;
+}
+
+section .left .botoom {
+  width: 60%;
+}
+
+section .left .banner-sign-in {
+  text-decoration: none;
+  padding: 10px 30px;
+  border-radius: 20px;
+  background-color: #283D73;
+  color: #C6F5FE;
+  position: relative;
+}
+
+section .left .banner-sign-in:hover {
+  color: white;
+  background: transparent;
+  background-color: #28315e;
+  text-shadow: none;
+}
+
+section .right img {
+  width: 400px;
+  height: 400px;
+}
+
+footer {
+  padding-left: 7%;
+  left: 0;
+  bottom: 0;
+}
+
+footer i {
+  font-size: 30px;
+  margin-right: 10px;
+  color: #283D73;
+}
+/*# sourceMappingURL=main.css.map */
